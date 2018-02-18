@@ -1,0 +1,21 @@
+climate.hallway:
+  platform: nest
+  unique_id: P0VPRwEUHM4WLbViyfF0ZIz0llmfVf6G
+sensor.iphone_battery_level:
+  platform: ios
+  unique_id: level_Neil
+sensor.iphone_battery_state:
+  platform: ios
+  unique_id: state_Neil
+sensor.ipad_battery_level:
+  platform: ios
+  unique_id: level_ipad
+sensor.ipad_battery_state:
+  platform: ios
+  unique_id: state_ipad
+sensor.ipad16gb_battery_state:
+  platform: ios
+  unique_id: state_ipad16gb
+sensor.ipad16gb_battery_level:
+  platform: ios
+  unique_id: level_ipad16gb

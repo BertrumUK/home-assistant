@@ -1,0 +1,5 @@
+sequence:
+- service: notify.notify
+  data:
+    message: "Restarting Home Assistant"
+- service: shell_command.humax_power

@@ -1,0 +1,7 @@
+  alias: 'Channel 4 HD'
+  trigger:
+    - platform: state
+      entity_id: input_select.channel
+      to: 'Channel 4 HD'
+  action:
+    service: shell_command.wemos_ch4hd

@@ -1,0 +1,9 @@
+  alias: 'HA Uptime Alert'
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.uptime
+    below: 1
+  action:
+    service: notify.ios_neil
+    data:
+      message: "Home Assistant Has Restarted"

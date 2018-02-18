@@ -1,0 +1,14 @@
+  alias: Bedroom Fan off 06:30
+  trigger:
+    platform: time
+    at: '06:30:00'
+  condition:
+    - condition: state
+      entity_id: group.family
+      state: home
+    - condition: numeric_state
+      entity_id: sensor.bedroom_temperature
+      above: 22
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.bedroom_fan

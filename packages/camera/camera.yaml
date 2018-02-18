@@ -1,0 +1,39 @@
+- platform: mjpeg
+  mjpeg_url: http://192.168.0.24:6779/video
+  name: Webcam
+  username: neil
+  password: !secret cam_password
+
+#### Traffic Cams ###
+# camera 2
+- platform: generic
+  name: M27 Jcn 3
+  still_image_url: https://ichef.bbci.co.uk/traveluk/ha/19111/large
+    
+# camera 3
+- platform: generic
+  name: M27 to M3
+  still_image_url: https://ichef.bbci.co.uk/traveluk/ha/12178/large
+    
+# camera 4
+- platform: generic
+  name: M3 Chandlers Ford
+  still_image_url: https://ichef.bbci.co.uk/traveluk/ha/12156/large
+    
+# camera 5
+- platform: generic
+  name: M3 Twyford
+  still_image_url: https://ichef.bbci.co.uk/traveluk/ha/12077/large
+  
+# camera 6
+- platform: generic
+  name: M3 Jcn 6
+  still_image_url: http://www.hants.gov.uk/cctv/WCAM081.jpg
+
+- platform: generic
+  still_image_url: http://www.meteox.co.uk/images.aspx?jaar=-3&voor=&soort=loop-bliksem&c=&n=&tijdid=20091121831%20alt=
+  name: Rain Radar
+
+- platform: generic
+  still_image_url: http://virga.sfsu.edu/gif/jetstream_atl_loop.gif
+  name: Jetstream

@@ -1,0 +1,7 @@
+  alias: 'ITV HD'
+  trigger:
+    - platform: state
+      entity_id: input_select.channel
+      to: 'ITV HD'
+  action:
+    service: shell_command.wemos_itvhd
