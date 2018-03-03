@@ -347,12 +347,6 @@ Unknown
   name: "Conservatory Temperature"  
   unit_of_measurement: "°C"  
   value_template: '{{value_json.temperature | multiply(0.89) | round(1) }}'
-  
-- platform: mqtt
-  state_topic: "conservatory"
-  name: "Conservatory Real Feel"
-  unit_of_measurement: "°C"
-  value_template: '{{ value_json.heatIndex | round(1) }}'
  
 - platform: mqtt  
   state_topic: "conservatory"  
@@ -417,13 +411,7 @@ Unknown
   state_topic: "utility"  
   name: "Utility Room Humidity"  
   unit_of_measurement: "%"  
-  value_template: '{{ value_json.humidity | round(1) }}'
-  
-- platform: mqtt
-  state_topic: "utility"
-  name: "Utility Room Real Feel"
-  unit_of_measurement: "°C"
-  value_template: '{{ value_json.heatIndex | round(1) }}'
+  value_template: '{{ value_json.humidity | round(1) }}'
 
 - platform: mqtt
   name: "Sonoff Temperature"
@@ -488,6 +476,22 @@ Unknown
   state_topic: "/esp02/wifi_power/dBm"  
   name: "Hot Water WiFi RSSI"  
   unit_of_measurement: "dBm" 
+  
+- platform: mqtt  
+  state_topic: "SHT30/temperature"  
+  name: "SHT30 Temperature"  
+  unit_of_measurement: "°C"  
+  
+- platform: mqtt  
+  state_topic: "SHT30/humidity"  
+  name: "SHT30 Humidity"  
+  unit_of_measurement: "%"  
+
+- platform: mqtt  
+  state_topic: "SHT30/voltage"  
+  name: "SHT30 Voltage"  
+  unit_of_measurement: "V" 
+
 
   
 - platform: template

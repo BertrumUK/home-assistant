@@ -19,3 +19,15 @@ sensor.ipad16gb_battery_state:
 sensor.ipad16gb_battery_level:
   platform: ios
   unique_id: level_ipad16gb
+sensor.us_air_quality_index:
+  platform: airvisual
+  unique_id: 50.9202178,-1.4633123_aqi
+sensor.us_main_pollutant:
+  platform: airvisual
+  unique_id: 50.9202178,-1.4633123_main_pollutant
+sensor.us_air_pollution_level:
+  platform: airvisual
+  unique_id: 50.9202178,-1.4633123_pollution_level
+media_player.neils_chromecast:
+  platform: cast
+  unique_id: 8c85f427-7b8d-1bf3-bffc-1a1cfff3f83e

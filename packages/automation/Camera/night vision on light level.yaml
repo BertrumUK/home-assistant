@@ -3,7 +3,7 @@
   trigger:
    platform: numeric_state
    entity_id: sensor.conservatory_ldr
-   below: 200
+   below: 150
   action:
     service: homeassistant.turn_on
     entity_id: switch.webcam_night_vision

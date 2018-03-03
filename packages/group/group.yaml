@@ -8,6 +8,9 @@
       - group.webcam
       - camera.webcam
       - updater.updater
+      - switch.red
+      - switch.green
+      - switch.blue
       
   Household_view:
     view: yes
@@ -20,6 +23,7 @@
       - group.garage
       - group.boiler
       - group.water_tank
+      - group.sht30
 
   Security_view:
     view: yes
@@ -292,7 +296,7 @@
   Bedroom:
     - sensor.bedroom_temperature
     - sensor.bedroom_humidity
-    - sensor.bedroom_real_feel 
+    #- sensor.bedroom_real_feel 
     - switch.bedroom_fan
     - switch.sonoff1
     - sensor.sonoff_temperature
@@ -301,12 +305,12 @@
   Utility Room:
     - sensor.utility_room_temperature
     - sensor.utility_room_humidity
-    - sensor.utility_room_real_feel
+    #- sensor.utility_room_real_feel
     
   Conservatory:
     - sensor.conservatory_temperature
     - sensor.conservatory_humidity
-    - sensor.conservatory_real_feel   
+    #- sensor.conservatory_real_feel   
     - sensor.conservatory_LDR
 
   Garage:
@@ -340,6 +344,12 @@
     - sensor.conservatory_humidity
     - sensor.garage_temperature
     - sensor.garage_humidity
+    
+  SHT30:
+    - sensor.sht30_temperature
+    - sensor.sht30_humidity  
+    - sensor.sht30_voltage
+
 ########### Network Devices ##############    
     
   Devices:

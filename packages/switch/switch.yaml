@@ -201,7 +201,12 @@
   payload_off: "16674"
   optimistic: false
   retain: true
-  
+  
+- platform: rpi_gpio
+  ports:
+    4: Red
+    17: Green
+    27: Blue
           
 #- platform: template
   #switches:

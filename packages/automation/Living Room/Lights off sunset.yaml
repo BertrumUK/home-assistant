@@ -4,7 +4,7 @@
   trigger:
    platform: numeric_state
    entity_id: sensor.conservatory_ldr
-   above: 750
+   above: 800
   condition:
    - condition: state
      entity_id: group.family

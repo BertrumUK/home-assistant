@@ -178,6 +178,10 @@
     sensor.hot_water_wemos:
        friendly_name: 'Hot Water Wemos'
        icon: mdi:raspberrypi
+    sensor.sht30_voltage:
+       icon: mdi:battery
+    sensor.sht30_humidity:
+       icon: mdi:water-percent
        
     switch.lights:
        icon: mdi:lightbulb

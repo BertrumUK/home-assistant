@@ -54,4 +54,6 @@ http: !include packages/http/http.yaml
 recorder: !include packages/recorder/recorder.yaml
 input_number: !include packages/number/number.yaml
 input_boolean: !include packages/boolean/boolean.yaml
+homekit:
+  pincode: !secret homekit
 
