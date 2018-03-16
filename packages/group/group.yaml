@@ -44,11 +44,6 @@
       - camera.m27_to_m3
       - camera.m3_chandlers_ford
       - camera.m3_twyford
-#    - camera.m3_jcn_6
-#    - weblink.m27_jcn_3
-#    - weblink.m27_to_m3
-#    - weblink.m3_twyford
-#    - weblink.m3_chandlers_ford
 
   Weather_View:
     view: yes
@@ -101,9 +96,6 @@
     icon: mdi:television
     name: Media Player
     entities:
- #  - light.led_strip_red
- #  - light.led_strip_green
- #  - light.led_strip_blue
       - media_player.roku_lt
       - media_player.neils_chromecast
 
@@ -135,7 +127,6 @@
     - climate.hallway
     - sensor.hallway_temperature
     - sensor.hallway_humidity
-    #- sensor.hallway_LDR
     - sensor.dark_sky_temperature
     - sensor.hallway_thermostat_target
     - sensor.hallway_thermostat_operation_mode
@@ -195,7 +186,7 @@
   Energy:
     - sensor.energy_budget
     - sensor.energy_cost
-  #  - sensor.energy_usage // broken since API maint. See https://github.com/home-assistant/home-assistant/issues/11861
+ #  - sensor.energy_usage // broken since API maint. See https://github.com/home-assistant/home-assistant/issues/11861
     - sensor.efergy_650958
     - sensor.energy_consumed
 
@@ -277,27 +268,20 @@
   Lights:
     - switch.light1
     - switch.light2
-    #- switch.lights
 
   Living Room:
     - switch.lights
-    #- group.lights
-    #- switch.lights_2
     - switch.tv
     - switch.fireplace
     #- switch.christmas_lights
     - sensor.mqtt_rf_temperature
     - sensor.mqtt_rf_humidity
     - sensor.mold_indicator
-   # - light.led_strip_red
-   # - light.led_strip_green
-   # - light.led_strip_blue
     - light.led_strip
     - input_number.led_animation_speed
   Bedroom:
     - sensor.bedroom_temperature
     - sensor.bedroom_humidity
-    #- sensor.bedroom_real_feel 
     - switch.bedroom_fan
     - switch.sonoff1
     - sensor.sonoff_temperature
@@ -306,12 +290,11 @@
 #  Utility Room:
 #   - sensor.utility_room_temperature
 #   - sensor.utility_room_humidity
-    #- sensor.utility_room_real_feel
+#   - sensor.utility_room_real_feel
     
   Conservatory:
     - sensor.conservatory_temperature
-    - sensor.conservatory_humidity
-    #- sensor.conservatory_real_feel   
+    - sensor.conservatory_humidity  
     - sensor.conservatory_LDR
 
   Garage:
@@ -416,11 +399,11 @@
     - sensor.front_door_pir
     - sensor.hallway_pir
     - sensor.bme280_pir
-    #- sensor.utility_room_pir
+   #- sensor.utility_room_pir
     - sensor.conservatory_pir
     - sensor.webcam_motion
     - light.hallway_led
-    #- light.utility_room_led
+   #- light.utility_room_led
     - light.conservatory_led
  
   Sensor Triggers:
@@ -465,8 +448,6 @@
     - device_tracker.cerys
     - device_tracker.cerys_
 
-  #Sonoff:
-  #  - switch.sonoff1
   
 ######## PI Hole ########
 
