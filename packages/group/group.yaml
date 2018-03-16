@@ -447,7 +447,6 @@
   Cerys:
     - device_tracker.cerys
     - device_tracker.cerys_
-
   
 ######## PI Hole ########
 
