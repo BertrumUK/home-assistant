@@ -1,0 +1,30 @@
+  exclude:
+    entities:
+      - sensor.dns_queries_today
+      - sensor.domains_being_blocked
+      - sensor.ads_blocked_today
+      - sensor.ads_percentage_today
+      - sensor.unique_domains
+      - sensor.queries_forwarded
+      - sensor.queries_cached
+      - sensor.mqtt_rf_temperature
+      - sensor.mqtt_rf_humidity
+      - sensor.kitchen_temperature
+      - sensor.hallway_temperature
+      - sensor.hallway_humidity
+      - sensor.bedroom_temperature
+      - sensor.bedroom_humidity
+      - sensor.sonoff_temperature
+      - sensor.sonoff_humidity
+      - sensor.utility_room_temperature
+      - sensor.utility_room_humidity
+      - sensor.conservatory_temperature
+      - sensor.conservatory_humidity
+      - sensor.garage_temperature
+      - sensor.garage_humidity
+      - sensor.sht30_temperature
+      - sensor.sht30_humidity  
+      - sensor.sht30_voltage
+      - sensor.bme_temperature
+      - sensor.bme_humidity
+      - sensor.bme_pressure

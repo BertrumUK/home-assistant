@@ -206,7 +206,19 @@
   ports:
     4: Red
     17: Green
-    27: Blue
+    27: Blue
+
+- platform: command_line
+  switches:
+    bmegreen:
+        command_on: 'curl -k http://192.168.0.113/control?cmd=PWM,0,100'
+        command_off: 'curl -k http://192.168.0.113/control?cmd=PWM,0,0'
+
+- platform: command_line
+  switches:
+    bmered:
+        command_on: 'curl -k http://192.168.0.113/control?cmd=PWM,2,100'
+        command_off: 'curl -k http://192.168.0.113/control?cmd=PWM,2,0'
           
 #- platform: template
   #switches:

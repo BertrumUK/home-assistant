@@ -26,7 +26,7 @@
   app_token: !secret efergy_token
   utc_offset: 0
   monitored_variables:
-   - type: instant_readings
+   #- type: instant_readings
    - type: budget
    - type: cost
      period: day
@@ -170,8 +170,8 @@
 # sensor 14
 - platform: statistics
   entity_id: sensor.energy_cost
-- platform: statistics
-  entity_id: sensor.energy_usage
+#- platform: statistics
+ # entity_id: sensor.energy_usage giving error. 8 March 2018
     
 # sensor 15
 - platform: fitbit
@@ -310,6 +310,10 @@
         friendly_name: 'Hot Water Wemos'
         value_template: "{{ 'Online' if is_state('device_tracker.hot_water_wemos', 'home') else 'Off-line' }}"
 
+      bme280_pir:
+        friendly_name: 'BME280 PIR'
+        value_template: "{{ 'Motion Detected' if is_state('sensor.bme_pir', '1') else 'Standby' }}"
+
 
       fitbitdistance:
         value_template: '{{ states.sensor.distance.state | multiply(0.6214) | round(2) }}'
@@ -372,13 +376,7 @@ Unknown
   name: "Bedroom Humidity"  
   unit_of_measurement: "%"  
   value_template: '{{ value_json.humidity | round(1) }}'
-  
-- platform: mqtt
-  state_topic: "bedroom"
-  name: "Bedroom Real Feel"
-  unit_of_measurement: "°C"
-  value_template: '{{ value_json.heatIndex | round(1) }}'
-  
+   
 - platform: mqtt  
   state_topic: "hallway" 
   name: "Hallway PIR"  
@@ -401,17 +399,17 @@ Unknown
   name: "Utility Room PIR"  
   value_template: '{{ value_json.motion }}'
   
-- platform: mqtt  
-  state_topic: "utility"  
-  name: "Utility Room Temperature"  
-  unit_of_measurement: "°C"  
-  value_template: '{{ value_json.temperature | round(1) }}'  
+#- platform: mqtt  
+#  state_topic: "utility"  
+#  name: "Utility Room Temperature"  
+#  unit_of_measurement: "°C"  
+#  value_template: '{{ value_json.temperature | round(1) }}'  
   
-- platform: mqtt  
-  state_topic: "utility"  
-  name: "Utility Room Humidity"  
-  unit_of_measurement: "%"  
-  value_template: '{{ value_json.humidity | round(1) }}'
+#- platform: mqtt  
+#  state_topic: "utility"  
+#  name: "Utility Room Humidity"  
+#  unit_of_measurement: "%"  
+#  value_template: '{{ value_json.humidity | round(1) }}'
 
 - platform: mqtt
   name: "Sonoff Temperature"
@@ -491,27 +489,29 @@ Unknown
   state_topic: "SHT30/voltage"  
   name: "SHT30 Voltage"  
   unit_of_measurement: "V" 
-
-
-  
-- platform: template
-  sensors:
-      mqtt_real_feel:
-        friendly_name: "Living Room Real Feel"
-        value_template: '{{ (((-42.379 + (2.04901523*(((states.mqtt_rf_temperature.state|float)*1.8)+32)) + (10.14333127*(states.mqtt_rf_humidity.state|float)) - (0.22475541*(((states.mqtt_rf_temperature.state|float)*1.8)+32)*(states.mqtt_rf_humidity.state|float)) - (6.83783 * (10**(-3))*((((states.mqtt_rf_temperature.state|float)*1.8)+32)**2)) - (5.481717 * (10**(-2))*((states.mqtt_rf_humidity.state|float)**2)) + (1.22874 * (10**(-3))*((((states.mqtt_rf_temperature.state|float)*1.8)+32)**2*(states.mqtt_rf_humidity.state|float))) + (8.5282 * (10**(-4))*((((states.mqtt_rf_temperature.state|float)*1.8)+32)*(states.mqtt_rf_humidity.state|float)**2)) - (1.99 * (10**(-6))*((((states.mqtt_rf_temperature.state|float)*1.8)+32)**2)*((states.mqtt_rf_humidity.state|float)**2)))-32)/1.8)|round(2) }}'
-        unit_of_measurement: "°C"
   
 - platform: mqtt  
-  state_topic: "frontdoor"  
-  name: "Garage Humidity"  
-  unit_of_measurement: "%"  
-  value_template: '{{ value_json.humidity | round(1) }}'  
- 
-- platform: mqtt  
-  state_topic: "frontdoor"  
-  name: "Garage Temperature"  
+  state_topic: "/BME280/Climate/Temperature"  
+  name: "BME Temperature"  
   unit_of_measurement: "°C"  
-  value_template: '{{value_json.temperature | multiply(0.86) | round(1) }}'
+  value_template: '{value | multiply(0.79)}'
+  
+- platform: mqtt  
+  state_topic: "/BME280/Climate/Humidity"  
+  name: "BME Humidity"  
+  unit_of_measurement: "%"  
+
+- platform: mqtt  
+  state_topic: "/BME280/Climate/Pressure"  
+  name: "BME Pressure"  
+  unit_of_measurement: "mb" 
+
+- platform: mqtt  
+  state_topic: "/BME280/PIR/PIR"  
+  name: "BME PIR" 
+  icon: mdi:run 
+  #value_template: '1' 
+  
  
 - platform: mqtt  
   state_topic: "frontdoor"  

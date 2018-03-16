@@ -1,9 +1,11 @@
 alias: 'Water Temp Warm'
 trigger:
-  platform: numeric_state
+- platform: numeric_state
   entity_id: sensor.water_temperature
   above: 41
   below: 49.9
+- platform: time
+  at: '06:00:00'
 action:
 - service: homeassistant.turn_off
   entity_id: switch.red

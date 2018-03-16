@@ -1,33 +1,44 @@
 climate.hallway:
+  name: Nest
   platform: nest
   unique_id: P0VPRwEUHM4WLbViyfF0ZIz0llmfVf6G
 sensor.iphone_battery_level:
+  name:
   platform: ios
   unique_id: level_Neil
 sensor.iphone_battery_state:
+  name:
   platform: ios
   unique_id: state_Neil
 sensor.ipad_battery_level:
+  name:
   platform: ios
   unique_id: level_ipad
 sensor.ipad_battery_state:
+  name:
   platform: ios
   unique_id: state_ipad
 sensor.ipad16gb_battery_state:
+  name:
   platform: ios
   unique_id: state_ipad16gb
 sensor.ipad16gb_battery_level:
+  name:
   platform: ios
   unique_id: level_ipad16gb
 sensor.us_air_quality_index:
+  name:
   platform: airvisual
   unique_id: 50.9202178,-1.4633123_aqi
 sensor.us_main_pollutant:
+  name:
   platform: airvisual
   unique_id: 50.9202178,-1.4633123_main_pollutant
 sensor.us_air_pollution_level:
+  name:
   platform: airvisual
   unique_id: 50.9202178,-1.4633123_pollution_level
 media_player.neils_chromecast:
+  name:
   platform: cast
   unique_id: 8c85f427-7b8d-1bf3-bffc-1a1cfff3f83e

@@ -94,6 +94,8 @@
 
        
 ########## House ###########
+
+######Hallway######
     sensor.hallway_thermostat_operation_mode:
        friendly_name: 'Nest Mode'
     sensor.hallway_humidity:
@@ -108,81 +110,30 @@
        friendly_name: 'Target Temperature'
     binary_sensor.hallway_thermostat_is_using_emergency_heat:
        friendly_name: 'Emergency Heat Mode'
-    sensor.living_room_humidity:
-       icon: mdi:water-percent
     climate.hallway:
        friendly_name: 'Thermostat'
-    sensor.conservatory_humidity:
-       icon: mdi:water-percent
-    sensor.conservatory_temperature:
-       icon: mdi:thermometer
-    sensor.conservatory_LDR:
-       icon: mdi:weather-sunny
-    sensor.conservatory_PIR:
-       icon: mdi:run
-    sensor.bedroom_humidity:
-       icon: mdi:water-percent
-    sensor.utility_room_humidity:
-       icon: mdi:water-percent
-    sensor.garage_humidity:
-       icon: mdi:water-percent 
-    sensor.mqtt_rf:
-       friendly_name: 'Living Room NodeMCU'
-       icon: mdi:raspberrypi 
-    sensor.bedroom_nodemcu:
-       icon: mdi:hotel
     sensor.hallway_pir:
        icon: mdi:run
     sensor.hallway_LDR:
-       icon: mdi:weather-sunny
-    sensor.solar_LDR:
-       icon: mdi:weather-sunny
-    sensor.utility_room_pir:
-       icon: mdi:run
+       icon: mdi:weather-sunny       
+    sensor.hallway_sensor:
+      friendly_name: 'Hallway'
+      icon: mdi:raspberrypi
     sensor.front_door_pir:
        icon: mdi:run 
+       
+######Living Room######       
+    sensor.living_room_humidity:
+       icon: mdi:water-percent
+    sensor.mqtt_rf:
+       friendly_name: 'Living Room NodeMCU'
+       icon: mdi:raspberrypi 
     sensor.mqtt_rf_temperature:
        icon: mdi:thermometer
        friendly_name: 'Living Room Temperature'
     sensor.mqtt_rf_humidity:
        icon: mdi:water-percent
        friendly_name: 'Living Room Humidity'
-    switch.sonoff1:
-       friendly_name: Ensuite Radiator
-       icon: mdi:radiator
-    sensor.sonoff_temperature:
-       friendly_name: Ensuite Temperature
-    sensor.sonoff_humidity:
-       friendly_name: Ensuite Humidity
-       icon: mdi:water-percent 
-    sensor.sonoff:
-       friendly_name: Ensuite Sonoff
-       icon: mdi:radiator
-    sensor.nodemcu:
-       friendly_name: 'Conservatory NodeMCU'
-       icon: mdi:raspberrypi
-    sensor.hallway_sensor:
-       friendly_name: 'Hallway'
-       icon: mdi:raspberrypi
-    sensor.utility_room_sensor:
-       friendly_name: 'Utility Room'
-       icon: mdi:raspberrypi
-    sensor.garage_sensor:
-       friendly_name: 'Garage'
-       icon: mdi:raspberrypi            
-    sensor.retropie:
-       icon: mdi:raspberrypi 
-    sensor.boiler_wemos:
-       friendly_name: 'Boiler Wemos'
-       icon: mdi:raspberrypi
-    sensor.hot_water_wemos:
-       friendly_name: 'Hot Water Wemos'
-       icon: mdi:raspberrypi
-    sensor.sht30_voltage:
-       icon: mdi:battery
-    sensor.sht30_humidity:
-       icon: mdi:water-percent
-       
     switch.lights:
        icon: mdi:lightbulb
        friendly_name: 'Lights'
@@ -201,17 +152,102 @@
        icon: mdi:fan
     switch.christmas_lights:
        icon: mdi:pine-tree
+       
+######Conservatory######    
+    sensor.conservatory_humidity:
+       icon: mdi:water-percent
+    sensor.conservatory_temperature:
+       icon: mdi:thermometer
+    sensor.conservatory_LDR:
+       icon: mdi:weather-sunny
+    sensor.conservatory_PIR:
+       icon: mdi:run
+    sensor.nodemcu:
+       friendly_name: 'Conservatory NodeMCU'
+       icon: mdi:raspberrypi    
+    sensor.sht30_voltage:
+       icon: mdi:battery
+    sensor.sht30_humidity:
+       icon: mdi:water-percent
+    sensor.bme_temperature:
+       friendly_name: 'Utility Room Temperature'
+    sensor.bme_humidity:
+       icon: mdi:water-percent
+       friendly_name: 'Utility Room Humidity'
+    sensor.bme_pressure:
+       icon: mdi:cloud-download
+       friendly_name: 'Barometric Pressure'       
+       
+######Bedroom######           
+    sensor.bedroom_humidity:
+       icon: mdi:water-percent
+    sensor.bedroom_nodemcu:
+       icon: mdi:hotel
+    switch.sonoff1:
+       friendly_name: Ensuite Radiator
+       icon: mdi:radiator
+    sensor.sonoff_temperature:
+       friendly_name: Ensuite Temperature
+    sensor.sonoff_humidity:
+       friendly_name: Ensuite Humidity
+       icon: mdi:water-percent 
+    sensor.sonoff:
+       friendly_name: Ensuite Sonoff
+       icon: mdi:radiator
+       
+######Utility Room######          
+    sensor.utility_room_humidity:
+       icon: mdi:water-percent
+    sensor.garage_humidity:
+       icon: mdi:water-percent 
+    sensor.utility_room_pir:
+       icon: mdi:run
+    sensor.utility_room_sensor:
+       friendly_name: 'Utility Room'
+       icon: mdi:raspberrypi
+    sensor.bme280_pir:
+       icon: mdi:run
+       friendly_name: 'Utility Room PIR'
+
+
+       
+######Boiler######              
+    sensor.boiler_wemos:
+       friendly_name: 'Boiler Wemos'
+       icon: mdi:raspberrypi
+    sensor.hot_water_wemos:
+       friendly_name: 'Hot Water Wemos'
+       icon: mdi:raspberrypi
+    switch.red:
+       icon: mdi:water
+       friendly_name: 'Hot'
+    switch.green:
+       icon: mdi:water
+       friendly_name: 'Warm'
+    switch.blue:
+       icon: mdi:water
+       friendly_name: 'Cold'
+       
+######Garage######  
+    sensor.garage_sensor:
+       friendly_name: 'Garage'
+       icon: mdi:raspberrypi     
+       
+######Misc######      
+    sensor.solar_LDR:
+       icon: mdi:weather-sunny       
+    sensor.retropie:
+       icon: mdi:raspberrypi 
+
 
 ##### Fitbit #######
 
     sensor.fitbitdistance:
-       icon: mdi:run
-       
-       
+       icon: mdi:run      
     group.fitbit:
       friendly_name: Fitbit
     
-       
+##### Family #######       
     group.alex:
        entity_picture: /local/alex.jpg
 

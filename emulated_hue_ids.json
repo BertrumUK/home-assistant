@@ -30,6 +30,8 @@
     "35": "switch.green",
     "36": "switch.blue",
     "37": "switch.red",
+    "38": "switch.bmered",
+    "39": "switch.bmegreen",
     "4": "switch.webcam_night_vision",
     "5": "switch.webcam_overlay",
     "6": "light.led_strip",

@@ -6,11 +6,9 @@
       - group.channel_select
       - group.living_room
       - group.webcam
+      - group.water
       - camera.webcam
       - updater.updater
-      - switch.red
-      - switch.green
-      - switch.blue
       
   Household_view:
     view: yes
@@ -18,12 +16,14 @@
     entities:
       - group.hallway
       - group.bedroom
+      - group.bme280
       - group.utility_room
       - group.conservatory
       - group.garage
       - group.boiler
       - group.water_tank
       - group.sht30
+
 
   Security_view:
     view: yes
@@ -253,6 +253,7 @@
   Automation Living Room:
     - automation.family_home_lights
     - automation.lights_on_sunset
+    - automation.lights_off_midnight
     - automation.fireplace_on_sunset
     - automation.hummy_on_630am
     #- automation.christmas_lights_on_sunset
@@ -302,9 +303,9 @@
     - sensor.sonoff_temperature
     - sensor.sonoff_humidity
     
-  Utility Room:
-    - sensor.utility_room_temperature
-    - sensor.utility_room_humidity
+#  Utility Room:
+#   - sensor.utility_room_temperature
+#   - sensor.utility_room_humidity
     #- sensor.utility_room_real_feel
     
   Conservatory:
@@ -344,12 +345,21 @@
     - sensor.conservatory_humidity
     - sensor.garage_temperature
     - sensor.garage_humidity
-    
+    - history_graph.living_room
+    - history_graph.hallway
+    - history_graph.bedroom
+    - history_graph.conservatory
+
   SHT30:
     - sensor.sht30_temperature
     - sensor.sht30_humidity  
     - sensor.sht30_voltage
 
+  Utility Room:
+    - sensor.bme_temperature
+    - sensor.bme_humidity
+    - sensor.bme_pressure
+    
 ########### Network Devices ##############    
     
   Devices:
@@ -405,11 +415,12 @@
     - input_boolean.landing_motion_home    
     - sensor.front_door_pir
     - sensor.hallway_pir
-    - sensor.utility_room_pir
+    - sensor.bme280_pir
+    #- sensor.utility_room_pir
     - sensor.conservatory_pir
     - sensor.webcam_motion
     - light.hallway_led
-    - light.utility_room_led
+    #- light.utility_room_led
     - light.conservatory_led
  
   Sensor Triggers:
@@ -440,6 +451,11 @@
     - sensor.water_temperature
     - sensor.hot_water_uptime
     - sensor.hot_water_wifi_rssi
+    
+  Water:
+    - switch.red
+    - switch.green
+    - switch.blue
 
   Alex:
     - device_tracker.alex

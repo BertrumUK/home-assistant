@@ -13,21 +13,7 @@ discovery:
 ios:
 conversation:
 history:
-logbook:
-  exclude:
-    entities:
-      - sensor.dns_queries_today
-      - sensor.domains_being_blocked
-      - sensor.ads_blocked_today
-      - sensor.ads_percentage_today
-      - sensor.unique_domains
-      - sensor.queries_forwarded
-      - sensor.queries_cached
-      - sensor.utility_room_temperature
-      - sensor.utility_room_humidity
-      - sensor.utility_room_real_feel
-      - sensor.garage_temperature
-      - sensor.garage_humidity
+logbook: !include packages/logbook/logbook.yaml
 
 config:
 upnp:
@@ -54,6 +40,5 @@ http: !include packages/http/http.yaml
 recorder: !include packages/recorder/recorder.yaml
 input_number: !include packages/number/number.yaml
 input_boolean: !include packages/boolean/boolean.yaml
-homekit:
-  pincode: !secret homekit
-
+history_graph: !include packages/history graph/graph.yaml
+homekit: !include packages/homekit/homekit.yaml
