@@ -494,7 +494,7 @@ Unknown
   state_topic: "/BME280/Climate/Temperature"  
   name: "BME Temperature"  
   unit_of_measurement: "°C"  
-  value_template: '{value | multiply(0.79)}'
+  value_template: '{{value | multiply(0.79) | round(1) }}'
   
 - platform: mqtt  
   state_topic: "/BME280/Climate/Humidity"  
