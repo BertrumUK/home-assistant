@@ -19,6 +19,7 @@ secrets.yaml
 nest.conf
 *.._
 .gitattributes
+.gitignore
 shell.yaml
 ip_bans.yaml
 emulated_hue_ids.json
