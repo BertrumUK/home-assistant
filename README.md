@@ -13,7 +13,7 @@ An old Android phone running IP Webcam provides a camera feed of the front of th
 ![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/main%20page.png)
 ![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/travel.png)
 ![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/weather.png)
-![Screenshot of Home View](home-assistant/Screenshots/automations.png)
+![Screenshot of Home View](https://github.com/BertrumUK/home-assistant/blob/Master2/Screenshots/automations.png)
 ![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/network.png)
 ![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/devices.png)
 ![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/fitbit.png)
