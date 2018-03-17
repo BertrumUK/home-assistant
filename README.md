@@ -10,12 +10,12 @@ Have Nest Thermostat in the hallway also pulling in the hallway temps. Amazon Do
 An old Android phone running IP Webcam provides a camera feed of the front of the house.
 
 
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/main%20page.png)
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/travel.png)
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/weather.png)
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/automations.png)
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/network.png)
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/devices.png)
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/fitbit.png)
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/media%20devices.png)
-![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master/Screenshots/tv%20remote.png)
+![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/main%20page.png)
+![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/travel.png)
+![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/weather.png)
+![Screenshot of Home View](home-assistant/Screenshots/automations.png)
+![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/network.png)
+![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/devices.png)
+![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/fitbit.png)
+![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/media%20devices.png)
+![Screenshot of Home View](https://raw.githubusercontent.com/BertrumUK/home-assistant/master2/Screenshots/tv%20remote.png)
