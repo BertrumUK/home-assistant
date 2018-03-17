@@ -409,7 +409,8 @@ Unknown
 #  state_topic: "utility"  
 #  name: "Utility Room Humidity"  
 #  unit_of_measurement: "%"  
-#  value_template: '{{ value_json.humidity | round(1) }}'
+#  value_template: '{{ value_json.humidity | round(1) }}'
+
 
 - platform: mqtt
   name: "Sonoff Temperature"
@@ -494,7 +495,7 @@ Unknown
   state_topic: "/BME280/Climate/Temperature"  
   name: "BME Temperature"  
   unit_of_measurement: "°C"  
-  value_template: '{{value | multiply(0.79) | round(1) }}'
+  value_template: '{{value | multiply(0.82) | round(1) }}'
   
 - platform: mqtt  
   state_topic: "/BME280/Climate/Humidity"  
