@@ -261,7 +261,6 @@
   #- automation.ensuite_power_retain
   #- automation.light_1_power_retain
   #- automation.light_2_power_retain
-    - automation.home_assistant_restart_midnight
     - automation.cpu_high_usage_alert
 ########### House ##############
 
@@ -279,6 +278,7 @@
     - sensor.mold_indicator
     - light.led_strip
     - input_number.led_animation_speed
+  
   Bedroom:
     - sensor.bedroom_temperature
     - sensor.bedroom_humidity
