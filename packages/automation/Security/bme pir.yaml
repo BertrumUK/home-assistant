@@ -11,7 +11,7 @@
   action:
   - service: notify.ios_neil
     data:
-      message: 'Utility Room Detected'
+      message: 'Utility Room Motion Detected'
       data:
         push:
           sound: "US-EN-Morgan-Freeman-Motion-Detected.wav"
