@@ -25,3 +25,4 @@ ip_bans.yaml
 emulated_hue_ids.json
 entity_registry.yaml
 .homekit.state
+*.conf
