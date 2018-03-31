@@ -176,6 +176,15 @@
   retain: true
   
 - platform: mqtt
+  name: "Humax Info"
+  state_topic: "home/IRtoMQTT/" # defined by subjectGTWIRtoMQTT in User_config.h
+  command_topic: "home/commands/WEMOS/IR_NEC"
+  payload_on: "574013"
+  payload_off: "574013"
+  optimistic: false
+  retain: true
+  
+- platform: mqtt
   name: "Humax Fake Command"
   state_topic: "home/IRtoMQTT/" # defined by subjectGTWIRtoMQTT in User_config.h
   command_topic: "home/commands/WEMOS/IR_NEC"

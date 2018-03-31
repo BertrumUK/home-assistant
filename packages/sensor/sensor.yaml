@@ -282,9 +282,9 @@
         friendly_name: 'MQTT RF'
         value_template: "{{ 'Online' if is_state('device_tracker.mqtt_rf', 'home') else 'Off-line' }}"
 
-      bedroom_nodemcu:
-        friendly_name: 'Bedroom NodeMCU'
-        value_template: "{{ 'Online' if is_state('device_tracker.bedroom_nodemcu', 'home') else 'Off-line' }}"
+      bedroom_wemos:
+        friendly_name: 'Bedroom Wemos'
+        value_template: "{{ 'Online' if is_state('device_tracker.bedroom_wemos', 'home') else 'Off-line' }}"
         
       garage_sensor:
         friendly_name: 'Garage Sensor'
@@ -365,17 +365,22 @@ Unknown
   value_template: '{{ value_json.motion }}'  
   
 - platform: mqtt  
-  state_topic: "bedroom"  
+  state_topic: "/Bedroom/SHT30/Temperature"  
   name: "Bedroom Temperature"  
   unit_of_measurement: "°C"  
-  value_template: '{{ value_json.temperature | multiply(0.96) | round(1) }}'  
+  # value_template: '{{ value_json.temperature | multiply(0.96) | round(1) }}'  
   ## was 0.95 multiply
   
 - platform: mqtt  
-  state_topic: "bedroom"  
+  state_topic: "/Bedroom/WiFi RSSI/dBm"  
+  name: "Bedroom WiFi RSSI"  
+  unit_of_measurement: "dBm" 
+  
+- platform: mqtt  
+  state_topic: "/Bedroom/SHT30/Humidity"  
   name: "Bedroom Humidity"  
   unit_of_measurement: "%"  
-  value_template: '{{ value_json.humidity | round(1) }}'
+  # value_template: '{{ value_json.humidity | round(1) }}'
    
 - platform: mqtt  
   state_topic: "hallway" 

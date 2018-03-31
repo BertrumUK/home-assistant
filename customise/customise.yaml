@@ -181,8 +181,10 @@
 ######Bedroom######           
     sensor.bedroom_humidity:
        icon: mdi:water-percent
-    sensor.bedroom_nodemcu:
+    sensor.bedroom_wemos:
        icon: mdi:hotel
+    sensor.bedroom_wifi_rssi:
+       icon: mdi:wifi
     switch.sonoff1:
        friendly_name: Ensuite Radiator
        icon: mdi:radiator
@@ -359,9 +361,14 @@
         icon: mdi:remote
     switch.humax_volume_down:
         icon: mdi:remote  
+    switch.humax_info:
+        icon: mdi:remote 
     switch.humax_fake_command:
         icon: mdi:remote 
- 
+    switch.sharp_tv_channel_up:
+        icon: mdi:remote 
+    switch.sharp_tv_channel_down:
+        icon: mdi:remote 
 
 ########## Pi Hole ########## 
     sensor.ads_percentage_today:

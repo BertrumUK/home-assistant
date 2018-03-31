@@ -43,6 +43,7 @@
       - camera.m27_jcn_3
       - camera.m27_to_m3
       - camera.m3_chandlers_ford
+      - camera.m3_j12_eastleigh
       - camera.m3_twyford
 
   Weather_View:
@@ -282,6 +283,7 @@
   Bedroom:
     - sensor.bedroom_temperature
     - sensor.bedroom_humidity
+    - sensor.bedroom_wifi_rssi
     - switch.bedroom_fan
     - switch.sonoff1
     - sensor.sonoff_temperature
@@ -322,8 +324,8 @@
     - sensor.bedroom_humidity
     - sensor.sonoff_temperature
     - sensor.sonoff_humidity
-    - sensor.utility_room_temperature
-    - sensor.utility_room_humidity
+    - sensor.bme_temperature
+    - sensor.bme_humidity
     - sensor.conservatory_temperature
     - sensor.conservatory_humidity
     - sensor.garage_temperature
@@ -351,7 +353,7 @@
     - sensor.hot_water_wemos
     - sensor.nodemcu
     - sensor.mqtt_rf
-    - sensor.bedroom_nodemcu
+    - sensor.bedroom_wemos
     - sensor.sonoff
     - sensor.hallway_sensor
     - sensor.utility_room_sensor
@@ -377,6 +379,7 @@
     - switch.humax_channel_down
     - switch.humax_forward
     - switch.humax_back
+    - switch.humax_info
     - switch.humax_fake_command
     - switch.sharp_tv_channel_up
     - switch.sharp_tv_channel_down
