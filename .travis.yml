@@ -1,9 +1,10 @@
 language: python
 python:
-  - "2.7.13"
-# command to install dependencies
+  - "3.5.3"
+before_install:
+  - mv travis_secrets.yaml secrets.yaml
 install:
   - pip3 install homeassistant
-# command to run tests
 script:
-  - pytest # or py.test for Python versions 3.5 and below
+  - hass -c . --script check_config
+
