@@ -1,8 +1,7 @@
-  alias: 'HA Uptime Alert'
+  alias: 'HA Startup Alert'
   trigger:
-    platform: numeric_state
-    entity_id: sensor.uptime
-    below: 1
+    platform: homeassistant
+    event: start
   action:
     service: notify.ios_neil
     data:

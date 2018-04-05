@@ -12,5 +12,5 @@
     service: light.turn_on
     entity_id: light.hallway_led
     data:
-      brightness: 20
+      brightness: 250
       rgb_color: [0, 255, 0]

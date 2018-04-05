@@ -161,4 +161,4 @@
       paper-toggle-button-checked-bar-color: "var(--light-primary-color)"
       paper-toggle-button-unchecked-bar-color: "var(--primary-text-color)"
       
-  javascript_version: auto
+  javascript_version: es5
