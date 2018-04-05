@@ -6,5 +6,6 @@ before_install:
 install:
   - pip3 install homeassistant
 script:
-  - hass -c . --script check_config
-script: python -m pytest
+  - cd /home/homeassistant/.homeassistant
+  - source /srv/homeassistant/homeassistant_venv/bin/activate
+  - hass --script check_config
