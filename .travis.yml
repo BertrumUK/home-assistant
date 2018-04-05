@@ -1,11 +1,9 @@
 language: python
 python:
-  - "3.5"
-before_install:
-  - mv travis_secrets.yaml secrets.yaml
+  - "3.6"
 install:
   - pip3 install homeassistant
 script:
-  - cd /home/homeassistant/.homeassistant
-  - source /srv/homeassistant/homeassistant_venv/bin/activate
-  - hass --script check_config
+  - hass -c . --script check_config
+before_install:
+- mv travis_secrets.yaml secrets.yaml
