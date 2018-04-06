@@ -1,3 +1,5 @@
+# home-assistant
+
 
   <h4>
   <div align="center">
@@ -6,8 +8,6 @@
   </h4>
 </div>
 
-
-# home-assistant
 Running Hassbian on a Raspberry Pi 3 with all physical connections moved off the Pi onto 3 NodeMCU's and 2 Wemos D1 Mini's. Using the Open MQTT RF/IR code (https://github.com/1technophile/OpenMQTTGateway) to provide 433meg RF,IR to my digibox and room temperature/humidity - thanks Florian :)
 
 Have multiple RF 433Mhz sockets controlling lights and bedroom fan. Soon to be moved on Sonoff's once I get new living room lights.
