@@ -1,3 +1,8 @@
+	<div align="center">
+  <h4>
+    <a href="https://travis-ci.org/BertrumUK/home-assistant"><img src="https://travis-ci.org/BertrumUK/home-assistant.svg?branch=Master2"/></a>
+  </h4>
+</div>
 # home-assistant
 Running Hassbian on a Raspberry Pi 3 with all physical connections moved off the Pi onto 3 NodeMCU's and 2 Wemos D1 Mini's. Using the Open MQTT RF/IR code (https://github.com/1technophile/OpenMQTTGateway) to provide 433meg RF,IR to my digibox and room temperature/humidity - thanks Florian :)
 
@@ -19,8 +24,4 @@ An old Android phone running IP Webcam provides a camera feed of the front of th
 ![Screenshot of Home View](https://github.com/BertrumUK/home-assistant/blob/Master2/Screenshots/fitbit.png)
 ![Screenshot of Home View](https://github.com/BertrumUK/home-assistant/blob/Master2/Screenshots/media%20devices.png)
 ![Screenshot of Home View](https://github.com/BertrumUK/home-assistant/blob/Master2/Screenshots/tv%20remote.png)
-	<div align="center">
-  <h4>
-    <a href="https://travis-ci.org/BertrumUK/home-assistant"><img src="https://travis-ci.org/BertrumUK/home-assistant/builds/362945432"/></a>
-  </h4>
-</div>
+
