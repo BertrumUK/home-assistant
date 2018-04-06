@@ -2,6 +2,7 @@
   <h4>
   <div align="center">
   <a href="https://travis-ci.org/BertrumUK/home-assistant"><img src="https://travis-ci.org/BertrumUK/home-assistant.svg?branch=Master2"/></a>
+  <a href="https://github.com/BertrumUK/home-assistant/commits/Master2"><img src="https://img.shields.io/github/last-commit/CCOSTAN/Home-AssistantConfig.svg?style=plasticr"/></a>
   </h4>
 </div>
 
