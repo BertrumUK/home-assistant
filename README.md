@@ -1,6 +1,7 @@
-	<div align="center">
+
   <h4>
-    <a href="https://travis-ci.org/BertrumUK/home-assistant"><img src="https://travis-ci.org/BertrumUK/home-assistant.svg?branch=Master2"/></a>
+  <div align="center">
+  <a href="https://travis-ci.org/BertrumUK/home-assistant"><img src="https://travis-ci.org/BertrumUK/home-assistant.svg?branch=Master2"/></a>
   </h4>
 </div>
 # home-assistant
