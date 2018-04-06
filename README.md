@@ -4,6 +4,8 @@
   <a href="https://travis-ci.org/BertrumUK/home-assistant"><img src="https://travis-ci.org/BertrumUK/home-assistant.svg?branch=Master2"/></a>
   </h4>
 </div>
+
+
 # home-assistant
 Running Hassbian on a Raspberry Pi 3 with all physical connections moved off the Pi onto 3 NodeMCU's and 2 Wemos D1 Mini's. Using the Open MQTT RF/IR code (https://github.com/1technophile/OpenMQTTGateway) to provide 433meg RF,IR to my digibox and room temperature/humidity - thanks Florian :)
 
