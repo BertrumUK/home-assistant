@@ -19,3 +19,8 @@ An old Android phone running IP Webcam provides a camera feed of the front of th
 ![Screenshot of Home View](https://github.com/BertrumUK/home-assistant/blob/Master2/Screenshots/fitbit.png)
 ![Screenshot of Home View](https://github.com/BertrumUK/home-assistant/blob/Master2/Screenshots/media%20devices.png)
 ![Screenshot of Home View](https://github.com/BertrumUK/home-assistant/blob/Master2/Screenshots/tv%20remote.png)
+	<div align="center">
+  <h4>
+    <a href="https://travis-ci.org/BertrumUK/home-assistant"><img src="https://travis-ci.org/BertrumUK/home-assistant/builds/362945432"/></a>
+  </h4>
+</div>
