@@ -26,4 +26,4 @@ emulated_hue_ids.json
 entity_registry.yaml
 .homekit.state
 *.conf
-
+phue.conf
