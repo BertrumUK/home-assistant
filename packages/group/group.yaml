@@ -156,6 +156,7 @@
 
   Raspberry Pi 3:
     - input_boolean.restart_hass
+    - sensor.travis_status_label
     - sensor.ssl_Cert_Expiry
     - sensor.load_1m
     - sensor.load_5m
