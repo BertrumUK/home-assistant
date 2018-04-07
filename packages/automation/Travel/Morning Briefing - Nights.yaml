@@ -4,13 +4,13 @@
   trigger:
     platform: time
     at: '06:00'
- - condition:
-    condition: state
-    entity_id: input_boolean.home_to_work_nights
-    state: 'on'
- - condition: state
-    entity_id: input_boolean.home_to_work_nights
-    state: 'on' 
+  condition:
+    - condition: state
+      entity_id: input_boolean.home_to_work_nights
+      state: 'on'
+    - condition: state
+      entity_id: input_boolean.home_to_work_nights
+      state: 'on' 
 
   action:
     service: notify.ios_neil
