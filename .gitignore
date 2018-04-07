@@ -26,7 +26,4 @@ emulated_hue_ids.json
 entity_registry.yaml
 .homekit.state
 *.conf
-packages/shell/._shell.yaml
-packages/shell/shell.yaml
-packages/shell/shell.yaml
-packages/shell/shell.yaml
+
