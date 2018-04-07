@@ -3,7 +3,7 @@
   alias: Morning Briefing - Home to Work Nights
   trigger:
     platform: time
-    at: '06:00'
+    at: '07:00'
   condition:
     condition: state
     entity_id: input_boolean.home_to_work_nights
