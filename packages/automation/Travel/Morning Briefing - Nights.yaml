@@ -3,7 +3,7 @@
   alias: Morning Briefing - Home to Work Nights
   trigger:
     platform: time
-    at: '07:00'
+    at: '18:00'
   condition:
     condition: state
     entity_id: input_boolean.home_to_work_nights
@@ -18,4 +18,4 @@
                 Travel time is currently {{states('sensor.neil_home_to_work')}} Minutes
         data:
           push:
-            sound: "US-EN-Alexa-Good-Morning.wav"
+            sound: "US-EN-Alexa-Good-Night.wav"
