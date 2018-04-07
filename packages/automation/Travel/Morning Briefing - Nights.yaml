@@ -15,7 +15,7 @@
         message: >
                 Current temperature is {{states('sensor.dark_sky_temperature')}} C with {{states('sensor.dark_sky_summary')}} skies. Current Air Quality is {{ states.sensor.waqi_southampton_centre_united_kingdom.state}}.
                 {{ "\n" }}
-                Travel time is currently {{states('sensor.neil_home_to_work')}} Minutes
+                Travel time is currently {{states('sensor.neil_work_to_home')}} Minutes
         data:
           push:
             sound: "US-EN-Alexa-Good-Morning.wav" 
