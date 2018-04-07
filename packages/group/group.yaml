@@ -143,6 +143,7 @@
     - sensor.neil_work_to_home
     - sensor.julie_home_to_work
     - sensor.julie_work_to_home
+    - automation.morning_briefing__home_to_work_nights
 
   Traffic:
     - input_boolean.home_to_work_days
