@@ -3,6 +3,7 @@ sequence:
   data:
     message: "Restarting Home Assistant"
 - service: shell_command.humax_power
+humax_script:
 - service: shell_command.humax_script
         data_template:
           host: !secret mqttuser
