@@ -18,4 +18,4 @@
                 Travel time is currently {{states('sensor.neil_home_to_work')}} Minutes
         data:
           push:
-            sound: "US-EN-Alexa-Good-Morning.wav"
+            sound: "US-EN-Alexa-Good-Morning.wav" 
