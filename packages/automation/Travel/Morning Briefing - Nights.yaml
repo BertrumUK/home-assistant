@@ -4,10 +4,14 @@
   trigger:
     platform: time
     at: '06:00'
-  condition:
+- condition:
     condition: state
     entity_id: input_boolean.home_to_work_nights
     state: 'on'
+- condition: state
+    entity_id: input_boolean.home_to_work_nights
+    state: 'on' 
+
   action:
     service: notify.ios_neil
     data_template:
@@ -19,4 +23,3 @@
         data:
           push:
             sound: "US-EN-Alexa-Good-Morning.wav"
-                    
