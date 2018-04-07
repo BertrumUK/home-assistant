@@ -609,8 +609,5 @@ Unknown
        - 'date'
        - 'time_utc'
 
-- platform: rest
-  name: Travis Status Label
-  resource: https://api.travis-ci.org/repos/BertrumUK/home-assistant/cc.json?branch=master2
-  scan_interval: 60
-  value_template: "{{ value_json.last_build_number }}"
+- platform: travisci
+  api_key: !secret travis
