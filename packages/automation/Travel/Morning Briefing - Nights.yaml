@@ -4,11 +4,11 @@
   trigger:
     platform: time
     at: '06:00'
-- condition:
+ - condition:
     condition: state
     entity_id: input_boolean.home_to_work_nights
     state: 'on'
-- condition: state
+ - condition: state
     entity_id: input_boolean.home_to_work_nights
     state: 'on' 
 
