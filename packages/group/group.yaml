@@ -190,8 +190,8 @@
     - sensor.speedtest_ping
     - sensor.speedtest_download
     - sensor.speedtest_upload
-    - sensor.igd_sent_bytes
-    - sensor.igd_received_bytes
+  # - sensor.igd_sent_bytes
+  # - sensor.igd_received_bytes
     - sensor.wan_ip
 
 
