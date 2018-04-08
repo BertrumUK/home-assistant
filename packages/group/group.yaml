@@ -81,6 +81,7 @@
       - group.energy
       - group.broadband
       - group.raspberry_pi_3
+      - group.travis_CI
       - group.dns
       - group.iphone
       - group.connected_clients
@@ -156,7 +157,6 @@
 
   Raspberry Pi 3:
     - input_boolean.restart_hass
-    - sensor.travis_status_label
     - sensor.ssl_Cert_Expiry
     - sensor.load_1m
     - sensor.load_5m
@@ -173,6 +173,12 @@
     - sensor.processor_use
     - sensor.last_boot
     - sensor.since_last_boot_templated
+    
+  Travis CI:
+    - sensor.bertrumukhomeassistant_state
+    - sensor.bertrumukhomeassistant_last_build_duration
+    - sensor.bertrumukhomeassistant_last_build_finished_at
+
     
   PI Hole:
     - group.dns 

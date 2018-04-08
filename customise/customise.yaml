@@ -304,7 +304,16 @@
     sensor.minutessedentary:
        friendly_name: 'Sedentary Minutes'
        
-       
+ ######## Travis CI #######
+
+    sensor.bertrumukhomeassistant_last_build_finished_at:
+       friendly_name: 'Build Time'
+    sensor.bertrumukhomeassistant_state:
+       friendly_name: 'Build State'
+    sensor.bertrumukhomeassistant_last_build_duration:
+       friendly_name: 'Build Duration'
+
+    
     sensor.boiler_uptime:  
        friendly_name: 'Uptime'
        icon: mdi:clock-start
