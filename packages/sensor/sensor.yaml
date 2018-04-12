@@ -195,6 +195,10 @@
   unit_of_measurement: days
   scan_interval: 86400
   command: !secret ssl 
+  
+- platform: cert_expiry
+  port: 8123
+  host: !secret ssl2
 
 
 - platform: command_line
@@ -284,7 +288,7 @@
 
       bedroom_wemos:
         friendly_name: 'Bedroom Wemos'
-        value_template: "{{ 'Online' if is_state('device_tracker.bedroom_wemos', 'home') else 'Off-line' }}"
+        value_template: "{{ 'Online' if is_state('group.bedroom_wemos', 'home') else 'Off-line' }}"
         
       garage_sensor:
         friendly_name: 'Garage Sensor'

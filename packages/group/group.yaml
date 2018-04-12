@@ -158,6 +158,7 @@
   Raspberry Pi 3:
     - input_boolean.restart_hass
     - sensor.ssl_Cert_Expiry
+    - sensor.ssl_certificate_expiry
     - sensor.load_1m
     - sensor.load_5m
     - sensor.load_15m
@@ -299,6 +300,10 @@
     - switch.sonoff1
     - sensor.sonoff_temperature
     - sensor.sonoff_humidity
+    
+  Bedroom Wemos:
+    - device_tracker.bedroom_wemos
+    - device_tracker.bedroom_wemos2
     
 #  Utility Room:
 #   - sensor.utility_room_temperature
