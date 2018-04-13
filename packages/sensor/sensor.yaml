@@ -197,8 +197,8 @@
   command: !secret ssl 
   
 - platform: cert_expiry
-  port: 8123
   host: !secret ssl2
+  port: 8123
 
 
 - platform: command_line
