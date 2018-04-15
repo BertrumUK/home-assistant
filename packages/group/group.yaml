@@ -71,6 +71,7 @@
     name: Network Devices
     entities:
       - group.devices
+      - group.device_state
 
 
   Misc_View:
@@ -381,6 +382,25 @@
     - sensor.roku
     - sensor.alex_pc
     - sensor.readynas
+    
+  Device State:
+    - binary_sensor.device_tracker_retropie
+    - binary_sensor.device_tracker_boiler_wemos
+    - binary_sensor.device_tracker_hot_water_wemos
+    - binary_sensor.device_tracker_nodemcu
+    - binary_sensor.device_tracker_mqtt_rf
+    - binary_sensor.device_tracker_bedroom_wemos
+    - binary_sensor.device_tracker_sonoff
+    - binary_sensor.device_tracker_hallway_sensor
+    - binary_sensor.device_tracker_utility_room_sensor
+    - binary_sensor.device_tracker_garage_sensor
+    - binary_sensor.device_tracker_chromecast
+    - binary_sensor.device_tracker_hummy
+    - binary_sensor.device_tracker_obihai
+    - binary_sensor.device_tracker_nest
+    - binary_sensor.device_tracker_roku
+    - binary_sensor.device_tracker_alex_pc
+    - binary_sensor.device_tracker_readynas
 
 ########### Humax ##############
 

@@ -7,9 +7,9 @@
     - device_tracker.mqtt_rf
     - device_tracker.bedroom_wemos
     - device_tracker.sonoff
-    - device_tracker.hallway_device_tracker
-    - device_tracker.utility_room_device_tracker
-    - device_tracker.garage_device_tracker
+    - device_tracker.hallway_sensor
+    - device_tracker.utility_room_sensor
+    - device_tracker.garage_sensor
     - device_tracker.chromecast
     - device_tracker.hummy
     - device_tracker.obihai
