@@ -1,94 +1,94 @@
     pincode: !secret homekit
     auto_start: False
     filter:
-    include_domains:
-      - switch.tv
-      - switch.lights
-      - switch.fireplace
-      - sensor.water_temperature
-      - sensor.dark_sky_temperature
-      - sensor.hallway_thermostat_temperature
-      - switch.red
-      - switch.green
-      - switch.blue
-      - light.led_strip
-      - switch.all_off
-    exclude_entities:
-      - light.conservatory_led
-      - light.hallway_led
-      - light.utility_room_led
-      - sensor.bedroom_humidity
-      - sensor.bedroom_temperature
-      - sensor.bme280_pir
-      - sensor.bme_humidity
-      - sensor.bme_pir
-      - sensor.bme_temperature
-      - sensor.conservatory_humidity
-      - sensor.conservatory_ldr
-      - sensor.conservatory_pir
-      - sensor.conservatory_temperature
-      - sensor.cpu_temperature
-      - sensor.dark_sky_apparent_temperature
-      - sensor.dark_sky_cloud_coverage
-      - sensor.dark_sky_dew_point
-      - sensor.dark_sky_humidity
-      - sensor.dark_sky_nearest_storm_bearing
-      - sensor.dark_sky_nearest_storm_distance
-      - sensor.dark_sky_precip
-      - sensor.dark_sky_precip_intensity
-      - sensor.dark_sky_precip_probability
-      - sensor.dark_sky_pressure
-      - sensor.dark_sky_summary
-      - sensor.dark_sky_wind_bearing
-      - sensor.dark_sky_wind_speed
-      - sensor.feed_temperature
-      - sensor.fitbitdistance
-      - sensor.front_door_pir
-      - sensor.garage_- sensor
-      - sensor.hallway_humidity
-      - sensor.hallway_pir
-      - sensor.hallway_- sensor
-      - sensor.hallway_temperature
-      - sensor.hallway_thermostat_humidity
-      - sensor.hallway_thermostat_hvac_state
-      - sensor.hallway_thermostat_operation_mode
-      - sensor.hallway_thermostat_target
-      - sensor.ipad16gb_battery_level
-      - sensor.ipad16gb_battery_state
-      - sensor.ipad_battery_level
-      - sensor.ipad_battery_state
-      - sensor.iphone_battery_level
-      - sensor.iphone_battery_state
-      - sensor.mold_indicator
-      - sensor.mqtt_rf_humidity
-      - sensor.mqtt_rf_temperature
-      - sensor.return_temperature
-      - sensor.sht30_humidity
-      - sensor.sht30_temperature
-      - sensor.sht30_voltage
-      - sensor.sonoff_humidity
-      - sensor.sonoff_temperature
-      - sensor.utility_room_pir
-      - sensor.webcam_motion
-      - switch.bedroom_fan
-      - switch.christmas_- lights
-      - switch.humax_back
-      - switch.humax_channel_down
-      - switch.humax_channel_up
-      - switch.humax_fake_command
-      - switch.humax_forward
-      - switch.humax_info
-      - switch.humax_mute
-      - switch.humax_power
-      - switch.humax_volume_down
-      - switch.humax_volume_up
-      - switch.- light1
-      - switch.- light2
-      - switch.sharp_tv_channel_down
-      - switch.sharp_tv_channel_up
-      - switch.sonoff1
-      - switch.sonoff_- light_1_power_retain
-      - switch.sonoff_- light_2_power_retain
-      - switch.sonoff_power_retain
-      - switch.webcam_night_vision
-      - switch.webcam_overlay
+      include_domains:
+        - switch.tv
+        - switch.lights
+        - switch.fireplace
+        - sensor.water_temperature
+        - sensor.dark_sky_temperature
+        - sensor.hallway_thermostat_temperature
+        - switch.red
+        - switch.green
+        - switch.blue
+        - light.led_strip
+        - switch.all_off
+      exclude_entities:
+        - light.conservatory_led
+        - light.hallway_led
+        - light.utility_room_led
+        - sensor.bedroom_humidity
+        - sensor.bedroom_temperature
+        - sensor.bme280_pir
+        - sensor.bme_humidity
+        - sensor.bme_pir
+        - sensor.bme_temperature
+        - sensor.conservatory_humidity
+        - sensor.conservatory_ldr
+        - sensor.conservatory_pir
+        - sensor.conservatory_temperature
+        - sensor.cpu_temperature
+        - sensor.dark_sky_apparent_temperature
+        - sensor.dark_sky_cloud_coverage
+        - sensor.dark_sky_dew_point
+        - sensor.dark_sky_humidity
+        - sensor.dark_sky_nearest_storm_bearing
+        - sensor.dark_sky_nearest_storm_distance
+        - sensor.dark_sky_precip
+        - sensor.dark_sky_precip_intensity
+        - sensor.dark_sky_precip_probability
+        - sensor.dark_sky_pressure
+        - sensor.dark_sky_summary
+        - sensor.dark_sky_wind_bearing
+        - sensor.dark_sky_wind_speed
+        - sensor.feed_temperature
+        - sensor.fitbitdistance
+        - sensor.front_door_pir
+        - sensor.garage_- sensor
+        - sensor.hallway_humidity
+        - sensor.hallway_pir
+        - sensor.hallway_- sensor
+        - sensor.hallway_temperature
+        - sensor.hallway_thermostat_humidity
+        - sensor.hallway_thermostat_hvac_state
+        - sensor.hallway_thermostat_operation_mode
+        - sensor.hallway_thermostat_target
+        - sensor.ipad16gb_battery_level
+        - sensor.ipad16gb_battery_state
+        - sensor.ipad_battery_level
+        - sensor.ipad_battery_state
+        - sensor.iphone_battery_level
+        - sensor.iphone_battery_state
+        - sensor.mold_indicator
+        - sensor.mqtt_rf_humidity
+        - sensor.mqtt_rf_temperature
+        - sensor.return_temperature
+        - sensor.sht30_humidity
+        - sensor.sht30_temperature
+        - sensor.sht30_voltage
+        - sensor.sonoff_humidity
+        - sensor.sonoff_temperature
+        - sensor.utility_room_pir
+        - sensor.webcam_motion
+        - switch.bedroom_fan
+        - switch.christmas_- lights
+        - switch.humax_back
+        - switch.humax_channel_down
+        - switch.humax_channel_up
+        - switch.humax_fake_command
+        - switch.humax_forward
+        - switch.humax_info
+        - switch.humax_mute
+        - switch.humax_power
+        - switch.humax_volume_down
+        - switch.humax_volume_up
+        - switch.- light1
+        - switch.- light2
+        - switch.sharp_tv_channel_down
+        - switch.sharp_tv_channel_up
+        - switch.sonoff1
+        - switch.sonoff_- light_1_power_retain
+        - switch.sonoff_- light_2_power_retain
+        - switch.sonoff_power_retain
+        - switch.webcam_night_vision
+        - switch.webcam_overlay
