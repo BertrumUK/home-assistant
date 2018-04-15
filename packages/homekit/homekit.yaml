@@ -1,6 +1,6 @@
     pincode: !secret homekit
     auto_start: False
-   filter:
+    filter:
     include_domains:
       - switch.tv
       - switch.lights
