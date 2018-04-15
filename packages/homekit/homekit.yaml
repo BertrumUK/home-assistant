@@ -1,1 +1,22 @@
   pincode: !secret homekit
+   filter:
+    include_domains:
+      - switch.fireplace
+      - sensor.water_temperature
+      - sensor.dark_sky_temperature
+      - sensor.hallway_thermostat_temperature
+      - switch.red
+      - switch.green
+      - switch.blue
+      - light.led_strip
+      - switch.all_off
+    exclude_entities:
+      - light.conservatory_led
+      - light.hallway_led
+      - light.utility_room_led
+      - sensor.bedroom_humidity
+      - sensor.bedroom_temperature
+      - sensor.bme280_pir
+      - sensor.bme_humidity
+      - sensor.bme_pir
+      - sensor.bme_temperature
