@@ -1,4 +1,5 @@
     pincode: !secret homekit
+    auto_start: False
    filter:
     include_domains:
       - switch.fireplace
