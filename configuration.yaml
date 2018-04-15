@@ -41,4 +41,5 @@ recorder: !include packages/recorder/recorder.yaml
 input_number: !include packages/number/number.yaml
 input_boolean: !include packages/boolean/boolean.yaml
 history_graph: !include packages/history graph/graph.yaml
-homekit: # !include packages/homekit/homekit.yaml
+homekit: !include packages/homekit/homekit.yaml
+binary_sensor: !include packages/binary sensor/device tracker.yaml

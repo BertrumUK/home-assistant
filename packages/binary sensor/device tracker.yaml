@@ -1,20 +1,19 @@
-
   platform: device_tracker_sensor
   entities:
-    - sensor.retropie
-    - sensor.boiler_wemos
-    - sensor.hot_water_wemos
-    - sensor.nodemcu
-    - sensor.mqtt_rf
-    - sensor.bedroom_wemos
-    - sensor.sonoff
-    - sensor.hallway_sensor
-    - sensor.utility_room_sensor
-    - sensor.garage_sensor
-    - sensor.chromecast
-    - sensor.hummy
-    - sensor.obihai
-    - sensor.nest
-    - sensor.roku
-    - sensor.alex_pc
-    - sensor.readynas
+    - device_tracker.retropie
+    - device_tracker.boiler_wemos
+    - device_tracker.hot_water_wemos
+    - device_tracker.nodemcu
+    - device_tracker.mqtt_rf
+    - device_tracker.bedroom_wemos
+    - device_tracker.sonoff
+    - device_tracker.hallway_device_tracker
+    - device_tracker.utility_room_device_tracker
+    - device_tracker.garage_device_tracker
+    - device_tracker.chromecast
+    - device_tracker.hummy
+    - device_tracker.obihai
+    - device_tracker.nest
+    - device_tracker.roku
+    - device_tracker.alex_pc
+    - device_tracker.readynas
