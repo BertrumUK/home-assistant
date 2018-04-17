@@ -22,7 +22,7 @@
       - group.garage
       - group.boiler
       - group.water_tank
-      - group.sht30
+     #- group.sht30
 
 
   Security_view:
@@ -70,7 +70,7 @@
     icon: mdi:network
     name: Network Devices
     entities:
-      - group.devices
+     #- group.devices
       - group.device_state
 
 
