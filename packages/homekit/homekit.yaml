@@ -6,9 +6,11 @@
       - switch.fireplace
       - sensor.water_temperature
       - sensor.dark_sky_temperature
+      - climate.hallway
       - sensor.hallway_thermostat_temperature
       - switch.red
       - switch.green
       - switch.blue
+      - switch.humax_power
       - light.led_strip
       - switch.all_off
