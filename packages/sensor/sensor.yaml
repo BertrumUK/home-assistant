@@ -190,7 +190,7 @@
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
-    Authorization: !secret strava
+    Authorization: Bearer !secret strava
   value_template: '{{ value_json[0].distance | multiply(0.000621371) | round(1) }}'
   unit_of_measurement: mi
   scan_interval: 300 
