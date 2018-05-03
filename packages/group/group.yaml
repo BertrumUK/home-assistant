@@ -192,8 +192,8 @@
     - sensor.speedtest_ping
     - sensor.speedtest_download
     - sensor.speedtest_upload
-  # - sensor.igd_sent_bytes
-  # - sensor.igd_received_bytes
+    - sensor.igd_sent_bytes
+    - sensor.igd_received_bytes
     - sensor.wan_ip
 
 
@@ -251,6 +251,17 @@
 
   Strava:
     - sensor.strava_distance_last_activity
+    - sensor.strava_recent_achievements
+    -  sensor.strava_recent_elevation
+    - sensor.strava_recent_miles
+    - sensor.strava_ride_last_calories
+    - sensor.strava_ride_last_elevation
+    - sensor.strava_ride_last_hr
+    - sensor.strava_ride_last_speed
+    - sensor.strava_ride_last_watts
+    - sensor.strava_ytd_count
+    - sensor.strava_ytd_elevation
+    - sensor.strava_ytd_miles
 
 
   Ensuite:
