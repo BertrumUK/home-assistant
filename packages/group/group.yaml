@@ -5,7 +5,6 @@
       - group.family
       - group.channel_select
       - group.living_room
-      - group.webcam
       - group.water
       - camera.webcam
       - updater.updater
@@ -22,7 +21,7 @@
       - group.garage
       - group.boiler
       - group.water_tank
-     #- group.sht30
+      - group.sht30
 
 
   Security_view:
@@ -93,6 +92,7 @@
     name: Health
     entities:
       - group.fitbit
+      - group.strava
 
   Media_View:
     view: yes
@@ -249,6 +249,9 @@
     - sensor.alta_battery
     - sensor.sleep_efficiency
 
+  Strava:
+    - sensor.strava_distance_last_activity
+
 
   Ensuite:
     - switch.sonoff1
@@ -320,9 +323,9 @@
     - sensor.garage_temperature
     - sensor.garage_humidity
 
-  Webcam:
-    - switch.webcam_night_vision
-    - switch.webcam_overlay
+  #Webcam:
+    #- switch.webcam_night_vision
+    #- switch.webcam_overlay
 
   Peugeot:
     - device_tracker.obdii

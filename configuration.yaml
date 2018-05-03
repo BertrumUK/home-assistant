@@ -18,7 +18,7 @@ logbook: !include packages/logbook/logbook.yaml
 config:
 upnp:
 camera: !include packages/camera/camera.yaml
-android_ip_webcam: !include packages/camera/android webcam.yaml
+#android_ip_webcam: !include packages/camera/android webcam.yaml
 mqtt: !include packages/mqtt/mqtt.yaml
 emulated_hue: !include packages/hue/hue.yaml
 group: !include packages/group/group.yaml

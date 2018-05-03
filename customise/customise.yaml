@@ -98,6 +98,7 @@
 ######Hallway######
     sensor.hallway_thermostat_operation_mode:
        friendly_name: 'Nest Mode'
+       icon: mdi:thermostat
     sensor.hallway_humidity:
        friendly_name: 'Hallway Humidity'
        icon: mdi:water-percent

@@ -1,8 +1,14 @@
 - platform: mjpeg
   mjpeg_url: http://192.168.0.24:6779/video
-  name: Webcam
+  name: Phonecam
   username: neil
   password: !secret cam_password
+  
+- platform: yi
+  name: Webcam
+  host: '192.168.0.21'
+  password: !secret yihome
+  ffmpeg_arguments: '-vf scale=800:450'
 
 #### Traffic Cams ###
 # camera 2
