@@ -67,21 +67,21 @@
     
 # sensor 7
   # Tracking Home to Work
-- platform: google_travel_time
-  name: Julie Home to Work
-  api_key: !secret google_api
-  origin: !secret home
-  destination: !secret juliework
-  units: imperial
+#- platform: google_travel_time
+ # name: Julie Home to Work
+ # api_key: !secret google_api
+ # origin: !secret home
+ # destination: !secret juliework
+ # units: imperial
 
 # sensor 8
   # Tracking Work to Home
-- platform: google_travel_time
-  name: Julie Work to Home
-  api_key: !secret google_api
-  origin: !secret juliework
-  destination: !secret home
-  units: imperial
+#- platform: google_travel_time
+#  name: Julie Work to Home
+#  api_key: !secret google_api
+#  origin: !secret juliework
+#  destination: !secret home
+#  units: imperial
 
 # sensor 9
 - platform: nest
@@ -191,13 +191,8 @@
 #                        #
 ##########################
 - platform: rest
-<<<<<<< HEAD
   name: Strava Distance Last Activity
-  resource: https://www.strava.com/api/v3/athlete/activities -H
-=======
-  name: strava_ride_last_miles
   resource: https://www.strava.com/api/v3/athlete/activities
->>>>>>> c12e7b03fa979c7c58ecc23d157afcc05a8dc767
   method: GET
   headers:
     Authorization: Bearer !secret strava
