@@ -4,13 +4,12 @@
       - switch.tv
       - switch.lights
       - switch.fireplace
-      - sensor.water_temperature
+      - switch.bedroom_fan
+      - sensor.dark_sky_nearest_storm_bearing
       - sensor.dark_sky_temperature
+      - sensor.water_temperature
       - climate.hallway
       - sensor.hallway_thermostat_temperature
-      - switch.red
-      - switch.green
-      - switch.blue
       - switch.humax_power
       - light.led_strip
       - switch.all_off
