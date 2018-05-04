@@ -15,9 +15,7 @@
    - cloud_cover
    - humidity
    - pressure
-
-   
-# sensor 2
+# sensor 2
 - platform: api_streams
 
 ########## Efergy Energy Monitor ##########
@@ -186,9 +184,9 @@
     - "sleep/efficiency"
     
 ##########################
-#                        #
-# Strava - Last ride     #
-#                        #
+#                                                        #
+# Strava - Last ride                          #
+#                                                        #
 ##########################
 - platform: rest
   name: Strava Distance Last Activity
@@ -200,7 +198,7 @@
   unit_of_measurement: mi
   scan_interval: 300
 - platform: rest
-  name: strava_ride_last_elevation
+  name: Strava Ride Last Elevation
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -209,7 +207,7 @@
   unit_of_measurement: ft
   scan_interval: 300
 - platform: rest
-  name: strava_ride_last_speed
+  name: Strava Ride Last Speed
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -218,7 +216,7 @@
   unit_of_measurement: mph
   scan_interval: 300
 - platform: rest
-  name: strava_ride_last_watts
+  name: Strava Ride Last Watts
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -227,7 +225,7 @@
   unit_of_measurement: W
   scan_interval: 300
 - platform: rest
-  name: strava_ride_last_hr
+  name: Strava Ride Last HR
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -236,7 +234,7 @@
   unit_of_measurement: bpm
   scan_interval: 300
 - platform: rest
-  name: strava_ride_last_calories
+  name: Strava Ride Last Calories
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -250,7 +248,7 @@
 #                        #
 ##########################
 - platform: rest
-  name: strava_recent_miles
+  name: Strava Recent Totals
   resource: !secret strava2
   method: GET
   headers:
@@ -259,7 +257,7 @@
   unit_of_measurement: mi
   scan_interval: 300
 - platform: rest
-  name: strava_recent_elevation
+  name: Strava Recent Elevation
   resource: !secret strava2
   method: GET
   headers:
@@ -268,7 +266,7 @@
   unit_of_measurement: ft
   scan_interval: 300
 - platform: rest
-  name: strava_recent_achievements
+  name: Strava Recent Achievements
   resource: !secret strava2
   method: GET
   headers:
@@ -281,7 +279,7 @@
 #
 ############################################################
 - platform: rest
-  name: strava_ytd_miles
+  name: Strava YTD Miles
   resource: !secret strava2
   method: GET
   headers:
@@ -290,7 +288,7 @@
   unit_of_measurement: mi
   scan_interval: 300
 - platform: rest
-  name: strava_ytd_elevation
+  name: Strava YTD Elevation
   resource: !secret strava2
   method: GET
   headers:
@@ -299,7 +297,7 @@
   unit_of_measurement: ft
   scan_interval: 300
 - platform: rest
-  name: strava_ytd_count
+  name: Strava YTD Count
   resource: !secret strava2
   method: GET
   headers:

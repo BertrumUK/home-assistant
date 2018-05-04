@@ -252,7 +252,7 @@
   Strava:
     - sensor.strava_distance_last_activity
     - sensor.strava_recent_achievements
-    -  sensor.strava_recent_elevation
+    - sensor.strava_recent_elevation
     - sensor.strava_recent_miles
     - sensor.strava_ride_last_calories
     - sensor.strava_ride_last_elevation
