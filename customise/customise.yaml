@@ -251,21 +251,21 @@
       friendly_name: Fitbit
       
 ##### Strava #######
-    sensor.date
+    sensor.date:
        icon: mdi:calendar-multiple-check
-    sensor.time_duration
+    sensor.time_duration:
        icon: mdi:timer
-    sensor.distance
+    sensor.distance:
        icon: mdi:map-marker-distance
-    sensor.average_speed
+    sensor.average_speed:
        icon: mdi:speedometer
-    sensor.average_watts
+    sensor.average_watts:
        icon: mdi:battery-charging-outline
-    sensor.elevation_gain
+    sensor.elevation_gain:
        icon: mdi:elevation-rise
-    sensor.calories
+    sensor.calories:
        icon: mdi:food
-    sensor.achievements
+    sensor.achievements:
        icon: mdi:trophy-outline
        
 ##### Family #######       
