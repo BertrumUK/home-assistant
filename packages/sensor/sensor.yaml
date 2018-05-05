@@ -185,12 +185,13 @@
     - "sleep/efficiency"
     
 ##########################
-#                                                        #
-# Strava - Last ride                          #
-#                                                        #
+#                        #
+# Strava - Last ride     #
+#                        #
 ##########################
 - platform: rest
-  name: Strava Distance Last Activity
+  name: Distance
+  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -199,7 +200,7 @@
   unit_of_measurement: Miles
   scan_interval: 300
 - platform: rest
-  name: Strava Ride Last Elevation
+  name: Elevation Gain
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -208,7 +209,7 @@
   unit_of_measurement: Ft
   scan_interval: 300
 - platform: rest
-  name: Strava Ride Last Speed
+  name: Average Speed
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -217,25 +218,25 @@
   unit_of_measurement: MPH
   scan_interval: 300
 - platform: rest
-  name: Strava Ride Last Watts
+  name: Average Watts
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
     Authorization: !secret strava
-  value_template: '{{ value_json[0].average_watts | round(1) }}'
+  value_template: '{{ value_json[0].average_watts | round(0) }}'
   unit_of_measurement: Watts
   scan_interval: 300
 - platform: rest
-  name: Strava Ride Last Calories
+  name: Calories
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
     Authorization: !secret strava
   value_template: '{{ value_json[0].kilojoules | multiply(1.1140) | round(1) }}'
-  unit_of_measurement: Calories
+  unit_of_measurement: KCal
   scan_interval: 300
 - platform: rest
-  name: Strava Recent Achievements
+  name: Achievements
   resource: https://www.strava.com/api/v3/activities
   method: GET
   headers:
@@ -248,10 +249,10 @@
   method: GET
   headers:
     Authorization: !secret strava
-  value_template: '{ value_json[0].start_date }'
+  value_template: '{ value_json[0].start_date_local }'
   scan_interval: 300
 - platform: rest
-  name: Strava Ride Duration
+  name: Time Duration
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
