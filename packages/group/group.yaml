@@ -250,15 +250,14 @@
     - sensor.sleep_efficiency
 
   Strava:
-    - sensor.strava_date
-    - sensor.strava_ride_duration
-    - sensor.strava_distance_last_activity
-    - sensor.strava_ride_last_speed
-    - sensor.strava_ride_last_watts
-    - sensor.strava_ride_last_elevation
-    - sensor.strava_ride_last_calories
-    - sensor.strava_recent_achievements
-    - sensor.strava_recent_elevation
+    - sensor.date
+    - sensor.time_duration
+    - sensor.distance
+    - sensor.average_speed
+    - sensor.average_watts
+    - sensor.elevation_gain
+    - sensor.calories
+    - sensor.achievements
 
 
   Ensuite:
