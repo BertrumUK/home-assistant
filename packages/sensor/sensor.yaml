@@ -201,6 +201,7 @@
   scan_interval: 300
 - platform: rest
   name: Elevation Gain
+  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -210,6 +211,7 @@
   scan_interval: 300
 - platform: rest
   name: Average Speed
+  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -219,6 +221,7 @@
   scan_interval: 300
 - platform: rest
   name: Average Watts
+  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -228,6 +231,7 @@
   scan_interval: 300
 - platform: rest
   name: Calories
+  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -237,6 +241,7 @@
   scan_interval: 300
 - platform: rest
   name: Achievements
+  icon: mdi:bike
   resource: https://www.strava.com/api/v3/activities
   method: GET
   headers:
@@ -245,6 +250,7 @@
   scan_interval: 300
 - platform: rest
   name: Date
+  icon: mdi:bike
   resource: https://www.strava.com/api/v3/activities
   method: GET
   headers:
@@ -253,6 +259,7 @@
   scan_interval: 300
 - platform: rest
   name: Time Duration
+  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
