@@ -249,7 +249,25 @@
        icon: mdi:run      
     group.fitbit:
       friendly_name: Fitbit
-    
+      
+##### Strava #######
+    sensor.date
+       icon: mdi:calendar-multiple-check
+    sensor.time_duration
+       icon: mdi:timer
+    sensor.distance
+       icon: mdi:map-marker-distance
+    sensor.average_speed
+       icon: mdi:speedometer
+    sensor.average_watts
+       icon: mdi:battery-charging-outline
+    sensor.elevation_gain
+       icon: mdi:elevation-rise
+    sensor.calories
+       icon: mdi:food
+    sensor.achievements
+       icon: mdi:trophy-outline
+       
 ##### Family #######       
     group.alex:
        entity_picture: /local/alex.jpg
