@@ -15,7 +15,8 @@
    - cloud_cover
    - humidity
    - pressure
-# sensor 2
+
+# sensor 2
 - platform: api_streams
 
 ########## Efergy Energy Monitor ##########
@@ -255,7 +256,7 @@
   method: GET
   headers:
     Authorization: !secret strava
-  value_template: '{{ value_json[0].elapsed_time | multiply(0.6) | round(1) }}'
+  value_template: '{{ value_json[0].elapsed_time | multiply(0.02777777) | round(0) }}'
   unit_of_measurement: Minutes
   scan_interval: 300
 
