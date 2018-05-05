@@ -251,7 +251,7 @@
       friendly_name: Fitbit
       
 ##### Strava #######
-    sensor.date:
+    sensor.last_ride_date:
        icon: mdi:calendar-multiple-check
     sensor.time_duration:
        icon: mdi:timer
