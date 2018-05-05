@@ -185,13 +185,10 @@
     - "sleep/efficiency"
     
 ##########################
-#                        #
 # Strava - Last ride     #
-#                        #
 ##########################
 - platform: rest
   name: Distance
-  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -201,7 +198,6 @@
   scan_interval: 300
 - platform: rest
   name: Elevation Gain
-  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -211,7 +207,6 @@
   scan_interval: 300
 - platform: rest
   name: Average Speed
-  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -221,7 +216,6 @@
   scan_interval: 300
 - platform: rest
   name: Average Watts
-  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -231,7 +225,6 @@
   scan_interval: 300
 - platform: rest
   name: Calories
-  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
@@ -241,7 +234,6 @@
   scan_interval: 300
 - platform: rest
   name: Achievements
-  icon: mdi:bike
   resource: https://www.strava.com/api/v3/activities
   method: GET
   headers:
@@ -249,22 +241,20 @@
   value_template: '{{ value_json[0].achievement_count | round(0) }}'
   scan_interval: 300
 - platform: rest
-  name: Date
-  icon: mdi:bike
+  name: Last Ride Date
   resource: https://www.strava.com/api/v3/activities
   method: GET
   headers:
     Authorization: !secret strava
-  value_template: '{ value_json[0].start_date_local }'
+  value_template: '{ value_json.start_date_local }'
   scan_interval: 300
 - platform: rest
   name: Time Duration
-  icon: mdi:bike
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
     Authorization: !secret strava
-  value_template: '{{ value_json[0].elapsed_time | multiply(0.02777777) | round(0) }}'
+  value_template: '{{ value_json[0].elapsed_time | multiply(0.016666667) | round(0) }}'
   unit_of_measurement: Minutes
   scan_interval: 300
 
