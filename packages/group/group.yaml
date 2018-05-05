@@ -250,7 +250,7 @@
     - sensor.sleep_efficiency
 
   Strava:
-    - sensor.date
+    - sensor.last_ride_date
     - sensor.time_duration
     - sensor.distance
     - sensor.average_speed
