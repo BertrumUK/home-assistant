@@ -193,117 +193,73 @@
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
-    Authorization: Bearer !secret strava
+    Authorization: !secret strava
   value_template: '{{ value_json[0].distance | multiply(0.000621371) | round(1) }}'
-  unit_of_measurement: mi
+  unit_of_measurement: Miles
   scan_interval: 300
 - platform: rest
   name: Strava Ride Last Elevation
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
-    Authorization: Bearer !secret strava
+    Authorization: !secret strava
   value_template: '{{ value_json[0].total_elevation_gain | multiply(3.2808399) | round(1) }}'
-  unit_of_measurement: ft
+  unit_of_measurement: Ft
   scan_interval: 300
 - platform: rest
   name: Strava Ride Last Speed
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
-    Authorization: Bearer !secret strava
+    Authorization: !secret strava
   value_template: '{{ value_json[0].average_speed | multiply(2.236936) | round(1) }}'
-  unit_of_measurement: mph
+  unit_of_measurement: MPH
   scan_interval: 300
 - platform: rest
   name: Strava Ride Last Watts
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
-    Authorization: Bearer !secret strava
+    Authorization: !secret strava
   value_template: '{{ value_json[0].average_watts | round(1) }}'
-  unit_of_measurement: W
-  scan_interval: 300
-- platform: rest
-  name: Strava Ride Last HR
-  resource: https://www.strava.com/api/v3/athlete/activities
-  method: GET
-  headers:
-    Authorization: Bearer !secret strava
-  value_template: '{{ value_json[0].average_heartrate | round(1) }}'
-  unit_of_measurement: bpm
+  unit_of_measurement: Watts
   scan_interval: 300
 - platform: rest
   name: Strava Ride Last Calories
   resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
-    Authorization: Bearer !secret strava
+    Authorization: !secret strava
   value_template: '{{ value_json[0].kilojoules | multiply(1.1140) | round(1) }}'
-  unit_of_measurement: cal
-  scan_interval: 300
-##########################
-#                        #
-# Strava - Recent Totals #
-#                        #
-##########################
-- platform: rest
-  name: Strava Recent Totals
-  resource: !secret strava2
-  method: GET
-  headers:
-    Authorization: Bearer !secret strava
-  value_template: '{{ value_json["recent_ride_totals"]["distance"] | multiply(0.000621371) | round(1) }}'
-  unit_of_measurement: mi
-  scan_interval: 300
-- platform: rest
-  name: Strava Recent Elevation
-  resource: !secret strava2
-  method: GET
-  headers:
-    Authorization: Bearer !secret strava
-  value_template: '{{ value_json["recent_ride_totals"]["elevation_gain"] | multiply(3.2808399) | round(1) }}'
-  unit_of_measurement: ft
+  unit_of_measurement: Calories
   scan_interval: 300
 - platform: rest
   name: Strava Recent Achievements
-  resource: !secret strava2
+  resource: https://www.strava.com/api/v3/activities
   method: GET
   headers:
-    Authorization: Bearer !secret strava*
-  value_template: '{{ value_json["recent_ride_totals"]["achievement_count"] | round(1) }}'
-  scan_interval: 300
-############################################################
-#
-# Strava - YTD Totals
-#
-############################################################
-- platform: rest
-  name: Strava YTD Miles
-  resource: !secret strava2
-  method: GET
-  headers:
-    Authorization: Bearer !secret strava
-  value_template: '{{ value_json["ytd_ride_totals"]["distance"] | multiply(0.000621371) | round(1) }}'
-  unit_of_measurement: mi
+    Authorization: !secret strava
+  value_template: '{{ value_json[0].achievement_count | round(0) }}'
   scan_interval: 300
 - platform: rest
-  name: Strava YTD Elevation
-  resource: !secret strava2
+  name: Date
+  resource: https://www.strava.com/api/v3/activities
   method: GET
   headers:
-    Authorization: Bearer !secret strava
-  value_template: '{{ value_json["ytd_ride_totals"]["elevation_gain"] | multiply(3.2808399) | round(1) }}'
-  unit_of_measurement: ft
+    Authorization: !secret strava
+  value_template: '{ value_json[0].start_date }'
   scan_interval: 300
 - platform: rest
-  name: Strava YTD Count
-  resource: !secret strava2
+  name: Strava Ride Duration
+  resource: https://www.strava.com/api/v3/athlete/activities
   method: GET
   headers:
-    Authorization: Bearer !secret strava
-  value_template: '{{ value_json["ytd_ride_totals"]["count"] | round(1) }}'
+    Authorization: !secret strava
+  value_template: '{{ value_json[0].elapsed_time | multiply(0.6) | round(1) }}'
+  unit_of_measurement: Minutes
   scan_interval: 300
+
+
   
 # sensor 16
 - platform: moon
