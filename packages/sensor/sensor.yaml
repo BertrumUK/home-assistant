@@ -395,7 +395,7 @@
 
 
       fitbitdistance:
-        value_template: '{{ states.sensor_2.distance.state | multiply(0.6214) | round(2) }}' # sensor distance being used by Strava
+        value_template: '{{ states.sensor.distance_2.state | multiply(0.6214) | round(2) }}' # sensor distance being used by Strava
         friendly_name: 'Fitbit Distance'
         unit_of_measurement: 'miles'
         
