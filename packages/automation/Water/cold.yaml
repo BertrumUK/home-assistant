@@ -4,7 +4,8 @@ trigger:
   entity_id: sensor.water_temperature
   below: 40
 - platform: time
-  at: '06:00:00'
+  after: '06:00:00'
+  before: '22:30:00'
 action:
 - service: homeassistant.turn_off
   entity_id: switch.red
