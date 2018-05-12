@@ -3,8 +3,12 @@ trigger:
   platform: numeric_state
   entity_id: sensor.water_temperature
   below: 40
+<<<<<<< HEAD
 condition:
   condition: time
+=======
+- platform: time
+>>>>>>> e9339502719404971e02429fb47414523267353a
   after: '06:00:00'
   before: '22:30:00'
 action:
