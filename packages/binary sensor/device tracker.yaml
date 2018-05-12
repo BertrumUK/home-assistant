@@ -5,7 +5,7 @@
     - device_tracker.hot_water_wemos
     - device_tracker.nodemcu
     - device_tracker.mqtt_rf
-    - device_tracker.bedroom_wemos
+    - device_tracker.bedroom_wemos_2
     - device_tracker.sonoff
     - device_tracker.hallway_sensor
     - device_tracker.utility_room_sensor
