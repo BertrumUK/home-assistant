@@ -1,6 +1,8 @@
   platform: device_tracker_sensor
   entities:
     - device_tracker.retropie
+    - device_tracker.yicam_front_door
+    - device_tracker.yicam_garden
     - device_tracker.boiler_wemos
     - device_tracker.hot_water_wemos
     - device_tracker.nodemcu

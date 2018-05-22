@@ -376,6 +376,8 @@
     
   Devices:
     - sensor.retropie
+    - device_tracker.yicam_front_door
+    - device_tracker.yicam_garden
     - sensor.boiler_wemos
     - sensor.hot_water_wemos
     - sensor.nodemcu
@@ -395,6 +397,8 @@
     
   Device State:
     - binary_sensor.device_tracker_retropie
+    - binary_sensor.device_tracker_yicam_front_door
+    - binary_sensor.device_tracker_yicam_garden
     - binary_sensor.device_tracker_boiler_wemos
     - binary_sensor.device_tracker_hot_water_wemos
     - binary_sensor.device_tracker_nodemcu
