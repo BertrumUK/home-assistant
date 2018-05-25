@@ -5,7 +5,9 @@
       - switch.lights
       - switch.fireplace
       - switch.bedroom_fan
+      - switch.sonoff1
       - sensor.dark_sky_nearest_storm_bearing
+      - sensor.dark_sky_nearest_storm_distance
       - sensor.dark_sky_temperature
       - sensor.water_temperature
       - climate.hallway
