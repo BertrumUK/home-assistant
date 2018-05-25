@@ -5,8 +5,14 @@
   password: !secret cam_password
   
 - platform: yi
-  name: Webcam
+  name: Front Door
   host: '192.168.0.21'
+  password: !secret yihome
+  ffmpeg_arguments: '-vf scale=800:450'
+  
+- platform: yi
+  name: Garden
+  host: '192.168.0.22'
   password: !secret yihome
   ffmpeg_arguments: '-vf scale=800:450'
 

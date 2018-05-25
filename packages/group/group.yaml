@@ -6,7 +6,8 @@
       - group.channel_select
       - group.living_room
       - group.water
-      - camera.webcam
+      - camera.front_door
+      - camera.garden
       - updater.updater
       
   Household_view:
