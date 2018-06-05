@@ -5,8 +5,8 @@ trigger:
   below: 40
 condition:
   condition: time
-  after: '06:00:00'
-  before: '22:30:00'
+  after: '06:30'
+  before: '22:30'
 action:
 - service: homeassistant.turn_off
   entity_id: switch.red
