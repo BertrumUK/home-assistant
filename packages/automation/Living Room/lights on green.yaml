@@ -13,5 +13,5 @@
   - service: homeassistant.turn_on
     entity_id: light.led_strip
     data:
-      brightness: 100
+      brightness: 128
       rgb_color: [0, 255, 0] # Green LED on power on

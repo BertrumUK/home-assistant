@@ -435,7 +435,7 @@ Unknown
   state_topic: "conservatory"  
   name: "Conservatory LDR"
   ##This sensor is not calibrated to actual LUX. Rather, this a map of the input voltage ranging from 0 - 1023.
-  unit_of_measurement: "LUX"  
+  unit_of_measurement: "lx"  
   value_template: '{{ value_json.ldr }}'  
    
 - platform: mqtt  

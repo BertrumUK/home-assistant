@@ -278,7 +278,11 @@
     - input_boolean.ensuite_radiator
     - automation.ensuite_radiator_on_high_humidity
     - input_boolean.bedroom_fan
-    
+    - automation.bedroom_fan_off_2300
+    - automation.bedroom_fan_off_0000
+    - automation.bedroom_fan_off_0100
+    - automation.bedroom_fan_off_0630
+
   Home Assistant:
     - automation.broadband_drop
     - automation.ssl_renew_warning

@@ -16,7 +16,7 @@ history:
 logbook: !include packages/logbook/logbook.yaml
 
 config:
-upnp:
+#upnp:
 camera: !include packages/camera/camera.yaml
 #android_ip_webcam: !include packages/camera/android webcam.yaml
 mqtt: !include packages/mqtt/mqtt.yaml
