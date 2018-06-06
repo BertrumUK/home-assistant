@@ -272,6 +272,7 @@
     - automation.lights_off_midnight
     - automation.fireplace_on_sunset
     - automation.hummy_on_630am
+    - automation.water_temperature_led_on_0600
     #- automation.christmas_lights_on_sunset
     
   Automation Bedroom:
