@@ -3,9 +3,15 @@
     platform: time
     at: '01:00:00'
   condition:
-    condition: numeric_state
-    entity_id: sensor.bedroom_temperature
-    below: 25
+    - condition: state
+      entity_id: group.family
+      state: home
+    - condition: state
+      entity_id: input_boolean.bedroom_fan
+      state: 'on'
+    - condition: numeric_state
+      entity_id: sensor.bedroom_temperature
+      below: 25
   action:
     service: homeassistant.turn_off
     entity_id: switch.bedroom_fan
