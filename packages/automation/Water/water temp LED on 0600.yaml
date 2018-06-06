@@ -5,9 +5,9 @@ trigger:
   platform: time
   at: '06:00'
 condition:
-  condition: numeric_state
-  entity_id: sensor.water_temperature
-  above: 40
+  condition: state
+  entity_id: group.family
+  state: home
 action:
     service: homeassistant.turn_on
     entity_id: switch.green
